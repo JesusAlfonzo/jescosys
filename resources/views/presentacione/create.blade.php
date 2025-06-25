@@ -5,9 +5,15 @@
 @endsection
 
 @section('content')
+
+<div class="d-flex justify-content-center">
+    <x-divider currentPage='Crear una presentacion' >
+        <a href="{{ route('presentaciones.index') }}">Presentaciones</a>
+    </x-divider>
+</div>
     <section class="content container-fluid">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-sm-12 d-flex justify-content-center">
 
                 <div class="card card-default">
                     <div class="card-header">

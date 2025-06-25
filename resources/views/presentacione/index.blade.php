@@ -5,9 +5,15 @@
 @endsection
 
 @section('content')
+
+<div class="d-flex justify-content-center">
+    <x-divider currentPage='Presentaciones' >
+        <a href="{{ route('modulos') }}">Mis Modulos</a>
+    </x-divider>
+</div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 d-flex justify-content-center">
                 <div class="card">
                     <div class="card-header">
                         <div style="display: flex; justify-content: space-between; align-items: center;">

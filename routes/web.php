@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MarcaController;
 use App\Http\Controllers\PresentacioneController;
 use App\Http\Controllers\ProductoController;
@@ -13,7 +14,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 //rutas para admin
 Route::get('/admin/dashboard', [AdminController::class, 'index'])->middleware(['auth', 'role:admin']); 
